@@ -91,7 +91,7 @@ function App() {
         <div className='flex-container'>
           {movieData.map((item, index) =>
             <div className="movie_item" key={`movie-item${index}`}>
-              <img src={`https://image.tmdb.org/t/p/w300/${item.poster_path}`} />
+              <img src={`https://image.tmdb.org/t/p/w300/${item.poster_path}`} alt={`title: ${item.title}`} />
               <div className="movie_name">
                 {item.title}
               </div>
