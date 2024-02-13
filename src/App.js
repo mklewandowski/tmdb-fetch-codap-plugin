@@ -59,6 +59,12 @@ function App() {
     }
   }
 
+  const sendToCodap = (index) => {
+    console.log("click: " + index);
+    console.log(movieData[index].title);
+    console.log(movieData[index].popularity);
+  }
+
   return (
     <>
       <div className="background_container">
@@ -87,8 +93,9 @@ function App() {
             <div className="movie_item" key={`movie-item${index}`}>
               <img src={`https://image.tmdb.org/t/p/w300/${item.poster_path}`} />
               <div className="movie_name">
-                {item.original_title ? item.original_title : item.original_name}
+                {item.title}
               </div>
+              <button className="movie_button" onClick={()=>{sendToCodap(index)}}>Add to CODAP</button>
             </div>
           )}
         </div>
