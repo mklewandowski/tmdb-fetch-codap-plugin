@@ -1,8 +1,17 @@
 # TMDB-fetch-codap-plugin
-A small CODAP plugin web application that fetches movie information from TMDB and sends the data to CODAP so it can be displayed and manipulated.
+A small CODAP plugin web application that fetches movie information from TMDB and sends the data to CODAP so it can be displayed and manipulated. The application does the following:
+- presents a UI using React.
+- requests movie data for 1 of 3 categories (trending, top rating, now playing) using the TMDB API.
+- creates connection to CODAP using the CODAP Data Interactive Plugin API. This connections allows the app to be embedded within and communicate with CODAP as a plugin.
+- allows user to send movie data (title and popularity number) to CODAP and have data added to a case table as a new case entry.
+
+![TMDB-fetch-codap-plugin demo](https://github.com/mklewandowski/tmdb-fetch-codap-plugin/blob/main/tmdb-codap.gif?raw=true)
+
+## CODAP Data Interactive Plugin API
+More information about the CODAP Data Interactive Plugin API can be found here: https://github.com/concord-consortium/codap/wiki/CODAP-Data-Interactive-Plugin-API
 
 ## Credits
-Based on this example: https://github.com/AndyUGA/movie_db_project_tutorial
+TMDB API calls based on this example: https://github.com/AndyUGA/movie_db_project_tutorial
 
 # Getting Started with Create React App
 
