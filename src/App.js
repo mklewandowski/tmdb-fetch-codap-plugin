@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { apiKey } from './Key';
 import './App.css';
+var codapInterface = require('./CodapInterface');
 
 function App() {
+  console.log(codapInterface);
 
   const [movieData, setMovieData] = useState([]);
 
